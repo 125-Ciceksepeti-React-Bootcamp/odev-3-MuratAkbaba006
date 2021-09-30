@@ -43,7 +43,9 @@ class PostList extends Component {
     postList[index].body = body;
     NotificationManager.success('Post Güncellendi', 'Başarılı');
     }
-    NotificationManager.error('2 Karakterden az olamaz','Başarısız');
+    else{
+      NotificationManager.error('2 Karakterden az olamaz','Başarısız');
+    }
   };
 
   // silme işlemi gerçekleştirildiğinde bu metot vasıtasıyla
